@@ -13,7 +13,7 @@ textarea.addEventListener('keyup', (e) => {
     }
 })
 
-textarea.addEventListener('touchstart', (e) => {
+textarea.addEventListener('keydown', (e) => {
     if(e.keyCode === 18) {
         sendMessage(e.target.value)
     }
