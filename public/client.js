@@ -13,6 +13,14 @@ textarea.addEventListener('keyup', (e) => {
     }
 })
 
+textarea.addEventListener('touchstart', (e) => {
+    if(e.keyCode === 18) {
+        sendMessage(e.target.value)
+    }
+})
+
+
+
 function sendMessage(message) {
     let msg = {
         user: name,
